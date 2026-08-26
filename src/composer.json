@@ -32,10 +32,10 @@
             "@stan",
             "@test"
         ],
-        "migrate": "@php bin/console migrate",
-        "migrate:rollback": "@php bin/console migrate:rollback",
-        "migrate:status": "@php bin/console migrate:status",
-        "seed": "@php bin/console db:seed"
+        "migrate": "@php bin/console.php migrate",
+        "migrate:rollback": "@php bin/console.php migrate:rollback",
+        "migrate:status": "@php bin/console.php migrate:status",
+        "seed": "@php bin/console.php db:seed"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
