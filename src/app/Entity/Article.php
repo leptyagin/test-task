@@ -12,6 +12,7 @@ final class Article extends Entity
     public ?string $description = null;
     public string $text = '';
     public int $views = 0;
+    public ?string $publishedAt = null;
     public ?string $createdAt = null;
     public ?string $updatedAt = null;
 
