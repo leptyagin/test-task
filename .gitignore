@@ -4,3 +4,5 @@
 /src/var/cache/smarty/cache/*
 !/src/var/cache/smarty/compile/.gitkeep
 !/src/var/cache/smarty/cache/.gitkeep
+/src/.phpunit.cache/
+/src/.phpunit.result.cache
