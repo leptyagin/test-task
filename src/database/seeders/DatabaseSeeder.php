@@ -29,7 +29,7 @@ return static function (PDO $pdo): void {
         'name' => 'Databases',
         'description' => 'SQL, migrations, indexes',
     ]));
-    
+
     $categoryRepository->save(new Category([
         'name' => 'Empty',
         'description' => 'A category without articles',

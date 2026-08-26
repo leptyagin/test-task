@@ -31,5 +31,4 @@ cs-fix:
 check:
 	docker compose exec php composer check
 
-setup: 
-	up install migrate seed
+setup: up install migrate seed
