@@ -31,13 +31,17 @@
             "@cs",
             "@stan",
             "@test"
-        ]
+        ],
+        "migrate": "@php bin/console migrate",
+        "migrate:rollback": "@php bin/console migrate:rollback",
+        "migrate:status": "@php bin/console migrate:status"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.95",
         "phpstan/phpstan": "^2.2",
+        "phpstan/phpstan-phpunit": "^2.0",
         "phpunit/phpunit": "^10.5"
     }
 }

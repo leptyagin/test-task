@@ -1,8 +1,13 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+
 parameters:
     level: 8
     paths:
         - app
         - public
+        - database
         - tests
     tmpDir: var/cache/phpstan
     treatPhpDocTypesAsCertain: false
