@@ -4,4 +4,4 @@
 nginx, php 8.1, mysql
 
 инструменты:
-smarty, phpunit
+smarty, phpunit, phpstan, php-cs-fixer
