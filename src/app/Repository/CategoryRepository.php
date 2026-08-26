@@ -27,6 +27,27 @@ final class CategoryRepository extends Repository
         return $categories;
     }
 
+    /**
+     * @return list<Category>
+     */
+    public function withArticles(): array
+    {
+        $rows = $this->query(
+            'SELECT ' . self::COLUMNS . ' FROM categories c
+             WHERE EXISTS (SELECT 1 FROM article_category ac WHERE ac.category_id = c.id)
+             ORDER BY c.name',
+        )->fetchAll();
+
+        $categories = [];
+
+        foreach ($rows as $row) {
+            /** @var array<string, mixed> $row */
+            $categories[] = $this->hydrate($row);
+        }
+
+        return $categories;
+    }
+
     public function find(int $id): ?Category
     {
         $statement = $this->prepare('SELECT ' . self::COLUMNS . ' FROM categories WHERE id = :id');
