@@ -34,7 +34,8 @@
         ],
         "migrate": "@php bin/console migrate",
         "migrate:rollback": "@php bin/console migrate:rollback",
-        "migrate:status": "@php bin/console migrate:status"
+        "migrate:status": "@php bin/console migrate:status",
+        "seed": "@php bin/console db:seed"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
